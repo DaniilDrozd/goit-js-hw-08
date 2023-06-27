@@ -34,11 +34,9 @@ const modal = basicLightbox.create(
 modal.show();
 };
 
-
 galleryMarkUp.addEventListener("click", onContainerClick);
 
 var lightbox = new SimpleLightbox('.gallery a',{
     captionsData : 'alt',
     captionsDelay:250,
 });
-
