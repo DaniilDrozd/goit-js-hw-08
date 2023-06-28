@@ -43,7 +43,6 @@ function onFormSubmit(event){
 
     console.log(formData);
 
-    localStorage.setItem(FEEDBACK_F_ST, JSON.stringify(formData));
-
+    localStorage.clear();
 feedbackForm.reset();
 }

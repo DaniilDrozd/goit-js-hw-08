@@ -24,15 +24,6 @@ return items.map(({preview, original, description}) => {
 .join("");
 }
 
-const onContainerClick = (e) => {
-e.preventDefault();
-if (e.target.classList.contains("gallery")) return;
-const source = e.target.dataset.source;
-const modal = basicLightbox.create(
-    `<img src="${source}" width="800" height="600">`      
-);
-modal.show();
-};
 
 galleryMarkUp.addEventListener("click", onContainerClick);
 
