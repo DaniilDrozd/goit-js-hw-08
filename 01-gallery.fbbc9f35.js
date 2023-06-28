@@ -2,5 +2,5 @@ var t="undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:"u
     <a class="gallery__link" href="${t}">
     <img src="${t}" class="gallery__image" data-source="${e}" alt="${o}">
     </a>
-  </li>`).join("");c.insertAdjacentHTML("beforeend",h),c.addEventListener("click",t=>{if(t.preventDefault(),t.target.classList.contains("gallery"))return;let e=t.target.dataset.source,o=basicLightbox.create(`<img src="${e}" width="800" height="600">`);o.show()}),new(function(t){return t&&t.__esModule?t.default:t}(o))(".gallery a",{captionsData:"alt",captionsDelay:250});
-//# sourceMappingURL=01-gallery.c165908d.js.map
+  </li>`).join("");c.insertAdjacentHTML("beforeend",h),c.addEventListener("click",onContainerClick),new(function(t){return t&&t.__esModule?t.default:t}(o))(".gallery a",{captionsData:"alt",captionsDelay:250});
+//# sourceMappingURL=01-gallery.fbbc9f35.js.map
