@@ -3,7 +3,14 @@ import throttle from 'lodash.throttle';
 const FEEDBACK_F_ST = 'feedback-from-state';
 const feedbackForm = document.querySelector('.feedback-form');
 
-function onInput() {};
+function onInput() {
+  const { email, message } = feedbackForm.elements;
+
+  dataStorage.email = email.value;
+  dataStorage.message = message.value;
+
+  localStorage.setItem(keyStorage, JSON.stringify(dataStorage));
+};
 
 
 feedbackForm.addEventListener('input', throttle(onInput, 500));
