@@ -9,7 +9,7 @@ function onInput() {
   dataStorage.email = email.value;
   dataStorage.message = message.value;
 
-  localStorage.setItem(keyStorage, JSON.stringify(dataStorage));
+  localStorage.setItem(FEEDBACK_F_ST, JSON.stringify(dataStorage));
 };
 
 
