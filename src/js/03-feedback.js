@@ -1,8 +1,8 @@
 import throttle from 'lodash.throttle';
 
-const FEEDBACK_F_ST = 'feedback-from-state';
+const C = 'feedback-from-state';
 const feedbackForm = document.querySelector('.feedback-form');
-
+const dataStorage = {};
 function onInput() {
   const { email, message } = feedbackForm.elements;
 
@@ -50,6 +50,6 @@ function onFormSubmit(event){
 
     console.log(formData);
 
-    localStorage.clear();
-feedbackForm.reset();
+    localStorage.removeItem(FEEDBACK_F_ST);
+     feedbackForm.reset();
 }
